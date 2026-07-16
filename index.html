@@ -72,7 +72,7 @@
 <body>
 
 <h1>MCI Companion AI</h1>
-<p id="message">おはようございます！</p>
+<p id="message">こんにちは！</p>
 
 <div id="menu" class="chat-card">
     <p>次の機能から選んでください。タッチ／クリックすると、その機能に移動します。</p>
@@ -101,18 +101,15 @@
         switch (feature) {
             case 'check':
                 message.textContent = '認知機能チェックを開始します。';
-                showChat('「認知機能チェック」を選びました。
-                <br>ここから簡単な質問で状態を確認します。');
+                showChat('「認知機能チェック」を選びました。<br>ここから簡単な質問で状態を確認します。');
                 break;
             case 'history':
                 message.textContent = '保存された履歴を表示します。';
-                showChat('「履歴を見る」を選びました。
-                <br>過去の会話や検査結果を一覧表示します。');
+                showChat('「履歴を見る」を選びました。<br>過去の会話や検査結果を一覧表示します。');
                 break;
             case 'notify':
                 message.textContent = '家族への通知を準備します。';
-                showChat('「家族に通知」を選びました。
-                <br>家族に送るメッセージを確認して、通知を送信できます。');
+                showChat('「家族に通知」を選びました。<br>家族に送るメッセージを確認して、通知を送信できます。');
                 break;
         }
     }
