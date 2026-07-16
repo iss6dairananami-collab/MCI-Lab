@@ -12,12 +12,20 @@
 おはようございます！
 </p>
 
-<button>
-🎤 会話を始める. バカ殿
+<button id="startButton">
+🎤 会話を始める
 </button>
 
 <div id="chat"></div>
 
-</body
-></html>
+<script>
+  document.getElementById('startButton').addEventListener('click', function() {
+    document.getElementById('message').textContent = '会話を開始しました！';
+    const chat = document.getElementById('chat');
+    chat.innerHTML = '<p>こんにちは！何について話しますか？</p>';
+  });
+</script>
+
+</body>
+</html>
 
